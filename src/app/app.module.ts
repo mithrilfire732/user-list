@@ -6,16 +6,20 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { MenuComponent } from './menu/menu/menu.component';
+import { MenuitemComponent } from './menu/menuitem/menuitem.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    MenuComponent
+    MenuComponent,
+    MenuitemComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
